@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SlotProfit Zone ⚡
 
-## Getting Started
+A simple, transparent, and high-performance 5% Daily ROI platform built with Next.js 16, Supabase, and Tailwind CSS. Featuring a refined matte dark design.
 
-First, run the development server:
+## Features
+
+- **5% Daily ROI**: Fixed $20.00 USDT per slot = $1.00 daily earnings per slot.
+- **75 Slots Daily Limit**: Strictly 75 global slots minted every 24 hours to ensure platform sustainability.
+- **200% Payout Cap**: Each slot halts automatically once it delivers $40.00 (2x return).
+- **All-in-One Dashboard**: Everything (balance, slot booking, USDT deposits, withdrawals, slot progress tracking, and transaction history) operates seamlessly under a single page.
+- **BEP-20 USDT Deposits & Withdrawals**: Direct transaction hash verification for fast deposits and admin payouts.
+- **Dedicated Admin Control Panel**: `/admin` (passcode protected) with one-click 5% daily ROI distribution, deposit approval/rejection, and withdrawal dispatch.
+- **Refined Matte Palette**: Deep charcoal (`#0d0d14`), muted teal (`#16213e`), soft slate (`#1a1a2e`), and warm sand (`#c4b69c`) accents.
+
+## Database Setup
+
+1. Open your Supabase Dashboard (`https://supabase.com/dashboard/project/eryfyevfmfnsmdounlrb/sql/new`).
+2. Run the SQL script from `supabase_schema.sql`.
+3. That's it! Tables, constraints, RLS policies, and atomic transaction RPC functions are fully set up.
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Admin Portal
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit `/admin` (Default passcode: `admin123`).
